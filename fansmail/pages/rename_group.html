@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="../js/readmore.js"></script>
-    <title>Fans|Home page</title>
+    <title>Fans|Rename group page</title>
 </head>
 <body>
     <div class="container">
@@ -20,12 +19,22 @@
 
         <main>
             <div class="home-container">
-                <h3>Inbox</h3>
-                    <div class="inbox" id="inbox">                      
-            
-                    </div>            
+                <h2>Rename Group</h2>
+                <div class="inbox" id="inbox">
+    
+                    <form action="#" onsubmit="renameGroup(); return false">
+                        <input class="inputs" type="text" placeholder="Enter New name...." required id="grp_name">
+                        <br>
+                        <input class="inputs" type="text" placeholder="Enter Group Id...." required id="user_id">
+                        <br> <br>
+                        <button class="btn btn-success" type="submit">Rename</button>
+                        <button class="btn btn-danger" type="reset">Discard</button>
+                    </form>
+                    <br><br>
+                    <p id="errMessage"></p>   
                 
-            </div>
+                </div>            
+        </div>  
         </main>
 
         <div class="sidebar">
@@ -50,5 +59,5 @@
 
     </div>
 </body>
-<script src="../js/home.js"></script>
+<script src="../js/rename_group.js"></script>
 </html>

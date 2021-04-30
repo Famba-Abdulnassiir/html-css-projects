@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="../js/readmore.js"></script>
-    <title>Fans|Home page</title>
+    <title>Fans|Remove member page</title>
 </head>
 <body>
     <div class="container">
@@ -20,12 +19,20 @@
 
         <main>
             <div class="home-container">
-                <h3>Inbox</h3>
-                    <div class="inbox" id="inbox">                      
-            
-                    </div>            
-                
-            </div>
+                <h2>Remove Member</h2>
+                <div class="inbox" id="inbox">
+                    <form action="#" onsubmit="deleteMember(); return false">
+                        <input class="inputs" type="text" placeholder="Enter group Id" required id="grp_name">
+                        <br>
+                        <input class="inputs" type="text" placeholder="Enter User Id" required id="user_id">
+                        <br> <br>
+                        <button class="btn btn-success" type="submit">Delete</button>
+                        <button class="btn btn-reset" type="reset">Discard</button>
+                    </form>
+                    <br><br>
+                    <p id="errMessage"></p>
+                </div> 
+        </div>  
         </main>
 
         <div class="sidebar">
@@ -50,5 +57,5 @@
 
     </div>
 </body>
-<script src="../js/home.js"></script>
+<script src="../js/remove_member.js"></script>
 </html>
