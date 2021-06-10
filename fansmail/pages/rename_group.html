@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Create Group | Fans Mail</title>
+</head>
+<body>
+    <div class="nav-header">
+        <img class="logo" src="" alt="CO.Logo">
+        <h4 class="logo" >Fans Mail</h4>
+    </div>
+    <div class="nav nav-bar-aside" >
+        <ul>
+            <li><a href="./compose.html">Compose</a></li>
+            <li><a href="./home.html">Inbox</a></li>
+            <li><a href="./sent.html">Sent</a></li>
+            <li><a href="./unreadMail.html">Unread Emails</a></li>
+            <li><a href="./create_group.html">Create Group</a></li>
+            <li><a href="./my_group.html">My Groups</a></li>
+            <li><a href="./compose_group_mail.html">Send Group Email</a></li>
+            <li><a href="./remove_group.html">Remove Group</a></li>
+            <li><a href="./remove_member.html">Remove Group Member</a></li>
+            <li><a href="./rename_group.html">Rename Group</a></li>
+            <li><a href="./add_groupUser.html">Add User</a></li>
+            <li><a onclick="signout()">Signout</a></li>
+        </ul>
+    </div>
+        <div class="home-container">
+            <h2>Rename Group</h2>
+            <div class="inbox" id="inbox">
+                
+    
+            </div>            
+            <form action="#" onsubmit="renameGroup()">
+                <input type="text" placeholder="Enter New name...." required id="grp_name">
+                <input type="text" placeholder="Enter Group Id...." required id="user_id">
+                <button type="submit">Rename</button>
+                <button type="reset">Discard</button>
+            </form>
+            <br><br>
+            <p id="errMessage"></p>
+    </div>  
+    
+    
+</body>
+<script src="../js/rename_group.js"></script>
+</html>
