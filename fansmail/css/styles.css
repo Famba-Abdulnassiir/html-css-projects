@@ -171,3 +171,6 @@ a.active{
     padding-left: 20px;
     padding-top: 7px;
 }
+form input{
+    margin-bottom: 10px;
+}
